@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P148 M001｜AI 輔助學術統計</title>
+  <link rel="stylesheet" href="slides.css">
+  <script src="content.js" defer></script>
+  <script src="slides.js" defer></script>
+</head>
+<body>
+  <div class="deck">
+    <header>
+      <a class="brand" href="#1">P148 <span>M001</span></a>
+      <span id="chapter"></span>
+      <button id="fullscreen" type="button">全螢幕</button>
+    </header>
+    <main id="stage" tabindex="-1" aria-labelledby="slide-title"></main>
+    <footer>
+      <label class="jump">章節 <select id="jump"></select></label>
+      <div class="paging">
+        <button id="prev" type="button" aria-keyshortcuts="ArrowLeft">上一頁</button>
+        <output id="page" aria-live="polite"></output>
+        <button id="next" type="button" aria-keyshortcuts="ArrowRight">下一頁</button>
+      </div>
+    </footer>
+    <progress id="progress" aria-label="投影片進度"></progress>
+  </div>
+  <dialog id="figure-dialog" aria-label="放大原講義圖表">
+    <form method="dialog"><button type="submit" autofocus>關閉圖表</button></form>
+    <img alt="">
+  </dialog>
+  <noscript>請啟用 JavaScript 以開啟投影片。</noscript>
+</body>
+</html>
